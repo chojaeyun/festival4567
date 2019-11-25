@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Rubik+Mono+One&display=swap" rel="stylesheet">
+    <style>
+        html {font-family: 'Rubik Mono One', sans-serif; font-family: 'Black Han Sans', sans-serif;color:#282322}
+        body, h1,h2,h3, p {margin:0; padding:0;}
+        h1 {font-weight:900;font-size:60px; margin-bottom:5px; letter-spacing :4px;}
+        h2{font-size:40px; line-height: 1.2; margin-bottom: 10px;letter-spacing :2px;}
+        h3{font-size:28px; line-height: 1.5;}
+        p{font-size:23px;letter-spacing: -1px; word-spacing: -2px; line-height: 1.3; word-break: keep-all; }
+        section{position: relative;}
+        section .wrap{ position: relative;}
+        #monitor{position: fixed; background: black;padding: 5px; top:0; right:0;width: 70px;height:20px; color:white;}
+        
+
+        .wrap{width:1000px; margin:auto; height:600px;position:relative;}
+        .wrap2{width:1000px; margin:auto; height:600px;position:relative;}
+        .textbox{position:absolute;}
+        header .wrap {width:100%; height:900px;); overflow: hidden;}
+        #dj{position:absolute;width:400px; top:150px; left:700px;opacity: 1;}
+        #box1{position:absolute; top:160px;opacity: 1; z-index: 2;}
+        #button{width:200px; height:50px; border-bottom-right-radius: :200px; background-color:#FC3922;margin-top: 20px;}
+        #button:hover{background-color:#CE2410;}
+        .EDMpic{width:320px; height: 320px;margin-right:0px;background-color: red; border-radius: 100%;}
+        .EDMpic2{margin:0px;width:312px; height: 312px;background-color: red; border-radius: 100%; }
+        #EDMpic3{margin:0px;width:600px; top:-200px; background-color: red; }
+        .EDMS {width:300px; margin-right:32px;display: block;float:left;}
+        
+        .EDMS h3{text-align: center; margin-top:40px;font-size: 25px;}
+        .EDMS p{text-align:center;font-size: 21px;}
+        #EDM {position:absolute; top:320px;opacity: 0; z-index:1;}
+        #back {width:100%; background-attachment: fixed;}
+        #head1 {position:fixed; width:300px;top:30px; left:68px;margin:0;opacity:0; z-index: 2;}
+        #lou{width:1400px;position: absolute; left: 500px; top:300px;opacity: 0;}
+        #text1{position: absolute; top:200px;}
+        #top1{position:sticky;left:0;top:-50px; width:100%; z-index:1; opacity: 0;}
+        #top2{width:20%;position:fixed;left:0px; top:400px;z-index:1;opacity: 0;}
+        #top3{width:30%;position:fixed;left:350px; top:400px;z-index:1;opacity: 0;}
+    
+        #text2{position:fixed; width:400px; z-index: 2; color:white; left:850px; top:250px; opacity:0;}
+        #text3{position: absolute; top:2000px; left: 850px;}
+        #cam{position:fixed;top:0; left:250px;}
+        #disert1{position: absolute;top:20px;}
+        #disert2{position: absolute;top:-70px; width:400px;left:50%;transform: translateX(-50%);opacity: 0;}
+        #disert3{position: absolute;top:-160px;width: 300px;left:50%;transform: translateX(-50%);opacity: 0;}
+        #text4{position: absolute;top:300px; left:50%;transform: translateX(-50%);top:}
+
+
+
+        .pan{background: black; height:700px;
+                opacity: 0.4; transition: all 1s}
+        .pan:hover{ opacity: 0.7; }
+        h5{ font-size: 50px; 
+            font-weight: 900;
+            line-height: 1.3;
+            letter-spacing: -1px;
+            position: absolute;}
+
+        img{ position: absolute; }
+        .bold{color:black;}
+        
+        .t1{left:400px; top:600px;}
+        .h4{left:0px; top:0px;}
+        .h5{left:400px; top:-300px;}
+        .t2{left:500px; top:-100px;}
+        .h6{left:0px; top:300px;}
+        .i1{left:-200px; top:-200px;}
+        
+        .s1 .wrap{height: 300px}
+        .s3 .wrap{height: 900px;}
+        footer{background:black;}
+        footer .wrap{height:300px;}
+        footer p{ text-align: center; color: white; width:inherit; 
+            padding-top: 50px;}
+
+
+        @keyframes fly{
+            to{left:1000px; top:-500px; opacity: 0;}
+        }
+        @keyframes disappear{
+            to{opacity:0;top:130px;}
+        }
+        @keyframes disappear2{
+            from{opacity: 1;}
+            to{opacity: 0;}
+        }
+        @keyframes appear{
+            to{opacity: 1; top:70px;}
+        }
+        @keyframes appear2{
+            to{opacity: 1;}
+        }
+        @keyframes appear3{
+            to{opacity:1; top:200px;}
+        }
+        @keyframes big{
+            to{width:100%;}
+        }
+        @keyframes side{
+            to{left:300px; opacity: 1;}
+        }
+        @keyframes color{
+            to{color:white;}
+        }
+        @keyframes small{
+            to{width:40%;}
+        }
+        @keyframes disappear3{
+            from{width:40%;}
+            to{width:40%;opacity: 0;}
+        }
+
+        @keyframes dal{
+            from{opacity: 0;}
+            to{opacity: 1;}
+        }
+        @keyframes dal2{
+            from{opacity: 1;}
+            to{opacity: 0;}
+        }
+        
+
+    </style>
+</head>
+<body id="page1" style="height: 800px;overflow: hidden;">
+    <header><div class="wrap">
+        <div id="monitor" style="z-index: 3;"></div>
+        <img src="dj.png" id="dj">
+        <div class="wrap2">
+            <div id="box1">
+            <h1>Enjoy <br>the Music <br>Festival</h1>
+            <p style="font-size: 23px;">어떻게 하면 재밌게 놀 수 있을까요?<br>페스티벌에서 색다른 경험, 추억을 만들어 보아요! </p>
+            <div id="button"><p style="color:white;text-align: center; line-height:50px;">즐기러 떠나기</p></div>
+            </div>
+            
+            <div id = EDM>
+                <h2 style="text-align: center;font-size: 48px; margin-bottom: 50px;">EDM Festival</h2>
+                <div class = "EDMS">
+                <div class="EDMpic" style="background: url(dj3.jpg); background-size: cover; background-position: 40 50px;"></div>
+                <h3>Music</h3>
+                <p sytle="letter-spacing :1px;">개성있는 아티스트들의 디제이 셋과 라이브 퍼포먼스 공연까지. <br>이 순간을 즐기세요!</p>
+                </div>
+                
+                <div class="EDMS">
+                <div class="EDMpic" style="background:url(peformance.jpg); background-size: cover;background-position: -78px"></div>
+                <h3>Peformance</h3>
+                <p sytle="letter-spacing :1px;">웅장한 무대와 화려한 조명 그리고 공간을 채우는 관객들.<br>함께 즐겨보세요.</p>
+                </div>
+                
+                <div class="EDMS" style="margin-right: 0px;">
+                <div class="EDMpic" style="background:url(raver2.jpg);background-size: cover;background-position: 0 00px;"></div>
+                    <h3>Ravers</h3>
+                <p sytle="letter-spacing :1px;">새로운 경험을 함께할 멋진 관객들! <br>함께 레이빙을 즐겨보세요</p>
+                </div>  
+            
+            </div>
+        </div>
+    </div></header>
+
+    <section class="s1">
+            <div class="wrap">
+                 <img src="dj2.jpg" id="EDMpic3">
+                <p class="t1" style="top:300px;"">새로운 듀얼 카메라 시스템은 소중한 순간들을 더욱 넓은 장면으로 포착할 수 있게 해줍니다. 스마트폰 사상 가장 빠른 칩과 온종일 가는 배터리 덕분에 충전을 자주 안 해도 더욱 많은 일들을 해낼 수 있죠. 여기에 스마트폰 사상 최고 퀄리티의 동영상을 찍을 수 있기 때문에, 당신의 추억들을 그 어느 때보다 선명하고 아름답게 기록할 수 있습니다.</p>
+            </div>
+        </section>
+        <section class=""s2">
+            <div class="wrap dgray">
+                <h5 class="h4">ULTRA.<br> MUSIC<br>FESTIVAL</h5>
+            </div>
+        </section>
+        <section class="s3">
+            <div class="wrap">
+                <img src="EDC.webp" class="i1">
+                <h5 class="h5">Electirc<br>Daisy Carnival</h5>
+                <p class="t2"><span class="bold">blah blah blah blah blah blah</span> blah blah blahblah blah blahblah blah blahblah blah blahblah blah blah</p>
+            </div>
+        </section>
+        <section class="s4">
+            <div class="wrap dgray">
+                <h5 class="h6">Explore the Ultra Miami <br>
+                    2020 Phase 1 Lineup</h5>
+                <iframe width="800" height="315" src="https://www.youtube.com/watch?v=fn4GYb_MYAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+   
+    <footer><div class="wrap" style="width:100%;height: 100px; background-color: #282322;">
+        <p style="font-size: 20px; color:white;position: absolute;left:50%; transform:translateX(80%);top:40px;">Copyrightⓒ2019 EDMfestival All rights reserved.</p>
+    </div></footer>
+    <script type="text/javascript">
+        button.onclick = function(){
+                dj.style.animation = "fly 1s ease-in forwards";
+                box1.style.animation ="disappear 1s 1s forwards";
+                EDM.style.animation = "appear 1s 1s forwards";
+                page1.style.overflow = "visible";
+        }
+
+        
+
+        
+    </script>
+</body>
+</html>
